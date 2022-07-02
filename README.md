@@ -6,7 +6,7 @@ _SO IF YOU LIKED MY WORK, YOU CAN HIRE ME. 😉_
 
 ## Project URL
 
-[THIS IS ME](https://app.netlify.com/sites/asm-portfolio-cv/overview)
+[THIS IS ME](https://ravs-portfolio.netlify.app/)
 
 ## Getting Started with Create React App
 
