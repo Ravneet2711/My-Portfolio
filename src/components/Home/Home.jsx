@@ -1,30 +1,66 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaSkype } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import footer from "../../assets/footer.png";
 import "./Home.css";
-
-import ActionButtons from "./ActionButtons";
-import MyPic from "../../assets/me.png";
-import HeaderSocial from "./HeaderSocial";
-
-const Home = React.forwardRef((_, ref) => {
+const Home = () => {
   return (
-    <header ref={ref} id="home">
-      <div className="container header_container">
-        <h5>Hello I'm</h5>
-        <h1>Ashish</h1>
-        <h5 className="text-light">Front-End Developer</h5>
-
-        <ActionButtons />
-        <HeaderSocial />
-
-        <div className="my-pic">
-          <img src={MyPic} alt="my-pic"></img>
+    <div className="home-section">
+      <div className="home-container">
+        <div className="home-info">
+          <div className="profile-icon"></div>
+          <div className="profile-name">
+            <span className="profile-text">
+              Hello, I'm <span className="highlighted">Ravneet</span>
+            </span>
+          </div>
+          <div className="profile-role">
+            <span className="profile-text">
+              <h1>Front End Developer</h1>
+            </span>
+          </div>
+          <div className="profile-options">
+            <button>Hire Me</button>
+            {/* <a href= */}
+          </div>
         </div>
-
-        <a href="#contact" className="scroll__down">
-          Scroll Down
-        </a>
+        <div className="home-image">
+          <div className="profile-picture"></div>
+        </div>
       </div>
-    </header>
+      <div className="social-icons">
+        <ul>
+          <li className="linkedin">
+            <a href="/">
+              LinkedIn
+              <FaLinkedin className="icon" />
+            </a>
+          </li>
+          <li className="email">
+            <a href="/">
+              Email
+              <HiOutlineMail className="icon" />
+            </a>
+          </li>
+          <li className="skype">
+            <a href="/">
+              Skype <FaSkype className="icon" />
+            </a>
+          </li>
+          <li className="github">
+            <a href="/">
+              Github <FaGithub />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer-container">
+        <div className="footer-parent">
+          <img src={footer} alt="none" />
+        </div>
+      </div>
+    </div>
   );
-});
+};
+
 export default Home;
