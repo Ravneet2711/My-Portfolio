@@ -1,5 +1,11 @@
 import React from "react";
-// import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
+import {
+  BsInstagram,
+  BsGithub,
+  BsLinkedin,
+  BsTwitter,
+  BsFacebook,
+} from "react-icons/bs";
 
 import Form from "./Form";
 import "./Contact.css";
@@ -7,18 +13,28 @@ import ContactImg from "../../assets/contact.jpeg";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <h2>Contact Me</h2>
       <div className="contact-container">
         <div className="contact-title">
-          <h2>Get In Touch 📧</h2>
+          <h3>Get In Touch 📧</h3>
         </div>
         <div className="contact-icons">
-          <a href="#">F</a>
-          <a href="#">I</a>
-          <a href="#">L</a>
-          <a href="#">E</a>
-          <a href="#">T</a>
+          <a href="#">
+            <BsFacebook />
+          </a>
+          <a href="#">
+            <BsInstagram />
+          </a>
+          <a href="#">
+            <BsLinkedin />
+          </a>
+          <a href="#">
+            <BsGithub />
+          </a>
+          <a href="#">
+            <BsTwitter />
+          </a>
         </div>
         <div className="form-container">
           <div className="form-img">

@@ -1,3 +1,9 @@
+:root {
+  --color-primary: #08090c;
+  --color-gradient: linear-gradient(270deg, #f24f60 10.36%, #a5066c 95.36%);
+  --color-highlight: #ff5823;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +17,7 @@ body {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 1rem;
+  background: var(--color-gradient);
 }
 
 a {
@@ -21,15 +28,11 @@ a {
 
 h2 {
   text-align: center;
-  font-size: 32px;
-  color: #1f2235;
+  font-size: 5rem;
+  color: #fff;
   font-family: "Poppins";
   font-weight: 500;
-  margin: 2rem;
-}
-.separator {
-  border-bottom: 2px solid #1f221f;
-  width: 100px;
-  margin: 0 auto;
-  border-style: double;
+  margin: 4rem auto;
+  width: 20%;
+  border-bottom: 2px solid white;
 }

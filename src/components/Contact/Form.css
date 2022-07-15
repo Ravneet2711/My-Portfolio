@@ -36,6 +36,24 @@ input:focus {
   border: 2px solid rgba(30, 85, 250, 0.47);
   background-color: #fff;
 }
+.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background: #08090c;
+  width: 30%;
+}
+
+.btn svg {
+  height: 2rem;
+  width: 2rem;
+  vertical-align: bottom;
+}
+.btn:hover {
+  background: linear-gradient(270deg, #f24f60 10.36%, #a5066c 95.36%);
+}
 @media screen and (min-width: 940px) {
   form {
     width: 50%;

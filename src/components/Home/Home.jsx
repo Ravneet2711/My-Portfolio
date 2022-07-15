@@ -2,11 +2,15 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaSkype } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import footer from "../../assets/footer.png";
+import ProfileImg from "../../assets/profile.png";
 import "./Home.css";
 const Home = () => {
   return (
     <div className="home-section">
       <div className="home-container">
+        <div className="home-image">
+          <img src={ProfileImg} className="profile-picture" />
+        </div>
         <div className="home-info">
           <div className="profile-icon"></div>
           <div className="profile-name">
@@ -20,13 +24,13 @@ const Home = () => {
             </span>
           </div>
           <div className="profile-options">
-            <button>Hire Me</button>
-            {/* <a href= */}
+            <a href="#contact">Hire Me</a>
+            <a href="#">Download CV</a>
           </div>
         </div>
-        <div className="home-image">
+        {/* <div className="home-image">
           <div className="profile-picture"></div>
-        </div>
+        </div> */}
       </div>
       <div className="social-icons">
         <ul>

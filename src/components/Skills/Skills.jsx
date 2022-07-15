@@ -16,6 +16,7 @@ const Skills = () => {
   return (
     <div>
       <h2>Skills</h2>
+
       <div className="Skills-container">
         <div className="skill-left-section">
           <ul>

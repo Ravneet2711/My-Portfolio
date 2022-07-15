@@ -1,7 +1,10 @@
 .home-section {
-  padding-top: 3rem;
-  background: #08090c;
-  padding-bottom: 0rem;
+  padding-top: 18rem;
+  background: url(../../assets/home-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 16rem;
+  position: relative;
 }
 .home-container {
   max-width: 1100px;
@@ -21,22 +24,37 @@
   color: #f0f8ff;
 }
 .profile-name {
-  font-size: 24px;
+  font-size: 6rem;
   font-family: "Poppins";
   font-weight: 700;
 }
 .highlighted {
-  color: #ff5823;
+  color: var(--color-highlight);
 }
 .profile-text h1 {
   font-size: 40px;
   font-family: cursive;
 }
+.profile-role {
+  margin-bottom: 2rem;
+}
+.profile-options a {
+  border: 2px solid #fff;
+  margin: 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background: var(--color-primary);
+}
+.profile-options a:hover {
+  background: var(--color-gradient);
+}
 .home-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 0 0 #fff;
+  box-shadow: 0 10px 0 0 var(--color-highlight);
   border-radius: 50%;
   height: 380px;
   width: 380px;
@@ -46,14 +64,12 @@
   height: 92%;
   width: 92%;
   border-radius: 50%;
-  background-image: url(../../assets/shizuka.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-color: var(--color-highlight);
 }
+
 .profile-picture:hover {
-  transform: scale(1.07);
-  transition: 1s ease-out;
+  transform: scale(1.03);
+  transition: all 200ms ease-out;
 }
 .social-icons {
   display: flex;
@@ -71,16 +87,16 @@
   height: 60px;
 }
 .social-icons > ul > li.linkedin {
-  background-color: #d2d26f;
+  background-color: #3444ad;
 }
 .social-icons > ul > li.email {
-  background-color: #333;
+  background-color: #1f2235;
 }
 .social-icons > ul > li.skype {
-  background-color: #6fc2b0;
+  background-color: #43467d;
 }
 .social-icons > ul > li.github {
-  background-color: #565f69;
+  background-color: #7034b6;
 }
 .social-icons > ul > li:hover {
   margin-left: -10px;
@@ -93,7 +109,7 @@
   align-items: center;
   text-decoration: none;
   width: 100%;
-  color: gray;
+  color: #fff;
 }
 
 .social-icons > ul > li > a svg {
@@ -102,14 +118,18 @@
 }
 
 .footer-container {
-  height: 17.8%;
+  height: 16.8%;
   width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  bottom: 0;
 }
-.footer-parent img {
+/* .footer-parent img {
   max-width: 100%;
   height: 130px;
   margin-bottom: -8px;
+} */
+
+.footer-parent img {
+  max-width: 100%;
+  height: 122px;
 }
