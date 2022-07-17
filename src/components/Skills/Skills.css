@@ -1,9 +1,13 @@
 .Skills-container {
   max-width: 1100px;
   margin: 0 auto;
-  background: #08090c;
+  background-color: #5de17d57;
+  background-color: #3b457e;
+  background: var(--container-gradient);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 20px grey;
   padding: 2rem;
-  box-shadow: 0 0px 20px -2px #1f2235;
+  /* box-shadow: 0 0px 20px -2px #1f2235; */
   color: #f0f8ff;
   border-radius: 12px;
   display: grid;
@@ -31,7 +35,7 @@
   text-decoration: none;
   background: linear-gradient(
     94.53deg,
-    #1a1c25 1.87%,
+    #5c6ec2 1.87%,
     #1f222c 100%,
     #1c1e25 100%
   );
@@ -60,6 +64,12 @@
 .skill-right-section {
   border-radius: 10px;
   background: #1a1c25;
+  background: linear-gradient(
+    94.53deg,
+    #5c6ec2 1.87%,
+    #1f347b 100%,
+    #1c1e25 100%
+  );
   border: 0.5px solid #2d303a;
   padding: 10px 0;
   width: 50%;

@@ -8,9 +8,10 @@ import About from "./components/About Me/About";
 const App = () => {
   return (
     <>
+      <Navbar />
       <Home />
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <Project />
       <Contact />
     </>

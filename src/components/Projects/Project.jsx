@@ -6,7 +6,7 @@ import data from "./ProjectData.js";
 const Project = () => {
   console.log(data);
   return (
-    <div>
+    <div id="projects">
       <h2>Projects</h2>
       <div className="project-container">
         {data.map((project) => {

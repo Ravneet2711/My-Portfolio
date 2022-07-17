@@ -14,7 +14,7 @@ const Skills = () => {
   //   setState();
   // };
   return (
-    <div>
+    <div id="skills">
       <h2>Skills</h2>
 
       <div className="Skills-container">

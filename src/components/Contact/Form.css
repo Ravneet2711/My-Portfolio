@@ -3,46 +3,48 @@ form {
   box-shadow: 0 0 2px 1px #fff;
   display: flex;
   color: #111;
-  padding: 25px 15px 15px 15px;
+  padding: 3.5rem 2rem 3.5rem 2rem;
   justify-content: center;
   flex-direction: column;
   opacity: 0.9;
-  background-color: #fff;
-  box-shadow: 0 0 20px -2px #1f2235;
+  background: var(--form-gradient);
+  box-shadow: 0 0 20px -2px #fff;
   border-radius: 12px;
+  border: 2px solid var(--color-form);
 }
 
 label {
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   color: #111;
   letter-spacing: 0.2rem;
+  font-size: 1.6rem;
 }
 
 input,
 textarea {
   width: 100%;
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 2px solid var(--color-form);
   outline: none;
-  background-color: rgba(230, 230, 230, 0.6);
-  padding: 0.5rem 1rem;
-  font-size: 1.1rem;
-  margin-bottom: 22px;
+  background-color: rgb(240 236 236 / 60%);
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
   transition: 0.3s;
   border-radius: 10px;
 }
 
 textarea:focus,
 input:focus {
-  border: 2px solid rgba(30, 85, 250, 0.47);
+  border: 2px solid var(--color-form);
   background-color: #fff;
 }
 .btn {
-  border: 2px solid #fff;
+  border: 2px solid var(--color-form);
   color: #fff;
   text-align: center;
   padding: 1rem;
   font-size: 2rem;
-  background: #08090c;
+  background: var(--color-form);
   width: 30%;
 }
 
@@ -52,7 +54,7 @@ input:focus {
   vertical-align: bottom;
 }
 .btn:hover {
-  background: linear-gradient(270deg, #f24f60 10.36%, #a5066c 95.36%);
+  background: linear-gradient(270deg, #341291 10.36%, #cd96b9 95.36%);
 }
 @media screen and (min-width: 940px) {
   form {

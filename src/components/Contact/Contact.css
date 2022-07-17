@@ -1,10 +1,10 @@
 .contact-container {
-  max-width: 1100px;
-  padding: 10px;
+  width: var(--container-lg);
+  padding: 1.5rem;
   box-shadow: 0 0px 20px -2px #1f2235;
   border-radius: 12px;
   margin: 0 auto;
-  background: var(--color-primary);
+  background: var(--container-gradient);
 }
 
 .contact-title h3 {
@@ -14,7 +14,7 @@
   letter-spacing: 0.2rem;
   margin-bottom: 20px;
   text-align: left;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .form-img h4 {
@@ -27,28 +27,58 @@
 .contact-icons a {
   padding: 7px;
   color: #fff;
+  font-size: 1.6rem;
 }
 .form-container {
-  max-width: 380px;
   margin: 0 auto;
 }
 .form-img img {
   opacity: 0.5;
   width: 100%;
 }
-
-@media screen and (min-width: 940px) {
+@media (min-width: 940px) {
   .form-container {
-    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 2rem;
   }
 
   .form-img {
     flex: 1 1;
     align-self: center;
-    margin-right: 20px;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .contact-title h3 {
+    font-size: 4rem;
+  }
+  .contact-container {
+    width: var(--container-md);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-title h3 {
+    font-size: 2.5rem;
+  }
+
+  .form-img h4,
+  label {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .btn svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .contact-container {
+    width: var(--container-sm);
   }
 }

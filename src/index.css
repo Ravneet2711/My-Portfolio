@@ -1,7 +1,33 @@
 :root {
   --color-primary: #08090c;
-  --color-gradient: linear-gradient(270deg, #f24f60 10.36%, #a5066c 95.36%);
+  --container-gradient: radial-gradient(
+    circle 610px at 5.2% 51.6%,
+    rgba(5, 8, 114, 1) 0%,
+    rgba(7, 3, 53, 1) 97.5%
+  );
+  --color-gradient-hover: linear-gradient(
+    270deg,
+    #f24f60 10.36%,
+    #a5066c 95.36%
+  );
+  --color-gradient: linear-gradient(
+    to top right,
+    #d07b61,
+    #ff5823 33%,
+    #c4380e 67%
+  );
+
+  /* --color-gradient: linear-gradient(to top left, #39b385, #9be15d); */
   --color-highlight: #ff5823;
+  --color-form: #060767;
+  --form-gradient: radial-gradient(
+    circle farthest-corner at 1.3% 2.8%,
+    rgba(239, 249, 249, 1) 0%,
+    rgba(182, 199, 226, 1) 100.2%
+  );
+  --container-lg: 83%;
+  --container-md: 90%;
+  --container-sm: 97%;
 }
 
 * {
@@ -17,7 +43,7 @@ body {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 1rem;
-  background: var(--color-gradient);
+  background: linear-gradient(to right, #345899, #7579b0, #2b96c6);
 }
 
 a {
@@ -29,10 +55,20 @@ a {
 h2 {
   text-align: center;
   font-size: 5rem;
-  color: #fff;
+  color: var(--color-form);
   font-family: "Poppins";
   font-weight: 500;
   margin: 4rem auto;
-  width: 20%;
-  border-bottom: 2px solid white;
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }

@@ -32,6 +32,7 @@ const Form = () => {
         required
         autoComplete="off"
         name="message"
+        rows={4}
       />
 
       <button className="btn">

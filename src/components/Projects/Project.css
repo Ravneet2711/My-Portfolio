@@ -1,20 +1,21 @@
 .project-container {
-  max-width: 1100px;
+  width: var(--container-lg);
   margin: 0 auto;
-  background: var(--color-primary);
-  padding: 5rem;
-  box-shadow: 0 0px 20px -2px #1f2235;
+  padding: 0;
   color: #f0f8ff;
-  border-radius: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5rem;
+  gap: 3rem;
 }
 .project-card {
-  box-shadow: 0 0px 15px -2px #fff;
-  border: 2px solid;
+  box-shadow: 4px 7px 6px 0px #000;
+
+  border-radius: 8px;
+  background: var(--container-gradient);
+  padding: 1.5rem;
 }
 .project-img img {
+  border-radius: 8px;
   max-width: 100%;
   display: block;
 }
@@ -44,4 +45,21 @@
 .demo-link a:hover,
 .git-link a:hover {
   background: var(--color-gradient);
+}
+
+@media (max-width: 1024px) {
+  .project-container {
+    width: var(--container-md);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-container {
+    width: var(--container-sm);
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    padding: 2rem 1.5rem;
+  }
 }

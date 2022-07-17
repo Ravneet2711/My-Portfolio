@@ -3,10 +3,14 @@ import { FaGithub, FaLinkedin, FaSkype } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import footer from "../../assets/footer.png";
 import ProfileImg from "../../assets/profile.png";
+// import BackgroundImg from "../../assets/home-bg.jpg";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="home-section">
+    <div className="home-section" id="home">
+      {/* <div className="home-background">
+        <img src={BackgroundImg} />
+      </div> */}
       <div className="home-container">
         <div className="home-image">
           <img src={ProfileImg} className="profile-picture" />
