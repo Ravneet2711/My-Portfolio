@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaSkype } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import footer from "../../assets/footer.png";
+import footer from "../../assets/footer3.png";
 import ProfileImg from "../../assets/profile.png";
 // import BackgroundImg from "../../assets/home-bg.jpg";
 import "./Home.css";

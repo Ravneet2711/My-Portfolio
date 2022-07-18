@@ -5,6 +5,11 @@
     rgba(5, 8, 114, 1) 0%,
     rgba(7, 3, 53, 1) 97.5%
   );
+  --container-gradient: radial-gradient(
+    circle 610px at 5.2% 51.6%,
+    rgb(131, 134, 201),
+    rgb(87, 76, 218)
+  );
   --color-gradient-hover: linear-gradient(
     270deg,
     #f24f60 10.36%,
@@ -15,6 +20,11 @@
     #d07b61,
     #ff5823 33%,
     #c4380e 67%
+  );
+  --container-gradient: radial-gradient(
+    circle 610px at 5.2% 51.6%,
+    rgb(50 53 115),
+    rgb(34 27 113)
   );
 
   /* --color-gradient: linear-gradient(to top left, #39b385, #9be15d); */
@@ -43,7 +53,7 @@ body {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 1rem;
-  background: linear-gradient(to right, #345899, #7579b0, #2b96c6);
+  background: #eaf4ed;
 }
 
 a {
