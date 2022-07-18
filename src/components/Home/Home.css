@@ -197,6 +197,9 @@
   .home-section {
     padding: 10% 0;
   }
+  .social-icons {
+    display: none;
+  }
 }
 
 @media (max-width: 380px) {
