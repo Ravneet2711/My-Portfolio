@@ -195,10 +195,13 @@
     margin: 1rem;
   }
   .home-section {
-    padding: 10% 0;
+    padding: 11% 0;
   }
   .social-icons {
     display: none;
+  }
+  .profile-options a {
+    margin-bottom: 5rem;
   }
 }
 
