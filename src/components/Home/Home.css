@@ -64,7 +64,6 @@
   border-radius: 50%;
   height: 380px;
   width: 380px;
-  margin: 0 0 0 100px;
 }
 .profile-picture {
   height: 92%;
@@ -82,6 +81,7 @@
   top: 35%;
   left: 0;
   position: fixed;
+  z-index: 2;
 }
 
 .social-icons > ul > li {
@@ -182,7 +182,7 @@
     font-size: 3rem;
   }
   .footer-parent img {
-    height: 74px;
+    height: 77px;
   }
   .home-image {
     height: 230px;
@@ -213,9 +213,9 @@
   .footer-parent img {
     height: 70px;
   }
-  .footer-container {
+  /* .footer-container {
     display: none;
-  }
+  } */
   .home-image {
     height: 200px;
     width: 200px;
