@@ -1,49 +1,97 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { FaReact } from "react-icons/fa";
 import { SiCss3, SiHtml5, SiJavascript } from "react-icons/si";
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 import "./Skills.css";
 import data from "./SkillData.json";
-import SkillDetails from "./SkillDetails";
 
 const Skills = () => {
   const { js, html, css, react } = data.SKILLS_DATA;
-  const [state, setState] = useState(html);
+  // const [state, setState] = useState(html);
 
-  // handleClick = () => {
-  //   setState();
-  // };
   return (
     <div id="skills">
       <h2>Skills</h2>
 
       <div className="Skills-container">
-        <div className="skill-left-section">
-          <ul>
-            <li className={state === html ? "active" : ""}>
-              <a onClick={() => setState(html)}>
-                <SiHtml5 /> HTML5
-              </a>
-            </li>
-            <li className={state === css ? "active" : ""}>
-              <a onClick={() => setState(css)}>
-                <SiCss3 /> CSS3
-              </a>
-            </li>
-            <li className={state === js ? "active" : ""}>
-              <a onClick={() => setState(js)}>
-                <SiJavascript /> JavaScript
-              </a>
-            </li>
-            <li className={state === react ? "active" : ""}>
-              <a onClick={() => setState(react)}>
-                <FaReact /> ReactJS
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="skill-right-section">
-          <SkillDetails skill={state} />
+        <div className="skillsection">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            autoplay={{ delay: 4000, disableOnInteraction: true }}
+            speed={500}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            scrollbar={true}
+            navigation={true}
+            keyboard={{
+              enabled: true,
+            }}
+            modules={[Pagination, Navigation, Scrollbar, Autoplay]}
+            className=" container__details"
+          >
+            <SwiperSlide>
+              <div className="skillname">
+                <a className="skills-icon">
+                  <SiHtml5 /> HTML5
+                </a>
+
+                <ul>
+                  {html.map((items) => (
+                    <li>{items}</li>
+                  ))}
+                </ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="skillname">
+                <a className="skills-icon">
+                  <SiCss3 /> CSS3
+                </a>
+
+                <ul>
+                  {css.map((items) => (
+                    <li>{items}</li>
+                  ))}
+                </ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="skillname">
+                <a className="skills-icon">
+                  <SiJavascript /> JavaScript
+                </a>
+
+                <ul>
+                  {js.map((items) => (
+                    <li>{items}</li>
+                  ))}
+                </ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="skillname">
+                <a className="skills-icon">
+                  <FaReact /> ReactJS
+                </a>
+
+                <ul>
+                  {react.map((items) => (
+                    <li>{items}</li>
+                  ))}
+                </ul>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </div>

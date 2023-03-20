@@ -3,7 +3,7 @@ import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
 import Project from "./components/Projects/Project";
-import About from "./components/About Me/About";
+import About from "./components/AboutMe/About";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Navbar />
       <Home />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       <Project />
       <Contact />
     </>

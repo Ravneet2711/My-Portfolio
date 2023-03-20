@@ -27,8 +27,9 @@ nav a:hover {
 }
 
 nav a.active {
-  background: var(--color-primary);
-  color: var(--color-bg);
+  /* background: var(--color-primary);
+  color: var(--color-bg); */
+  background-color: rgb(49 136 245 / 30%);
 }
 
 @media (max-width: 1024px) {

@@ -1,0 +1,33 @@
+.container.about__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 35% 53%;
+  gap: 12%;
+}
+
+.about__portrait img {
+  width: inherit;
+}
+.about__portrait {
+  width: 100%;
+  border: 1rem solid #eee9e2;
+  transition: ease;
+}
+.about__portrait img {
+  max-width: 100%;
+}
+.about__right p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 53%;
+    gap: 12%;
+  }
+}

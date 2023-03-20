@@ -54,6 +54,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   background: #eaf4ed;
+  /* background: var(--container-gradient); */
 }
 
 a {
@@ -66,11 +67,18 @@ h2 {
   text-align: center;
   font-size: 5rem;
   color: var(--color-form);
+  /* color: #fff; */
   font-family: "Poppins";
   font-weight: 500;
   margin: 4rem auto;
 }
-
+h2:after {
+  border-top: 4px solid var(--color-form);
+  display: block;
+  width: 81px;
+  content: "";
+  margin: 8px auto 0;
+}
 @media (max-width: 1024px) {
   h2 {
     font-size: 4rem;
