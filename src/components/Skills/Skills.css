@@ -94,3 +94,43 @@
     max-width: 66.666667%;
   }
 } */
+@media (max-width: 1024px) {
+  .Skills-container {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .Skills-container {
+    width: 50%;
+  }
+  .skillname {
+    flex-direction: column;
+  }
+  .skillname a {
+    padding: 7.5px 15px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 426px) {
+  .Skills-container {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .skillname a {
+    padding: 7.5px 15px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 320px) {
+  .Skills-container {
+    max-width: 280px;
+    width: 100%;
+    padding: 1rem;
+  }
+  #skills h2 {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+}
