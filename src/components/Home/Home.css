@@ -415,8 +415,6 @@
     width: 100%;
     height: 100%;
   }
-  /* .profession-box {
-    /* display: none; */
 
   .home-image {
     left: 31%;
@@ -427,16 +425,12 @@
     left: auto;
     transform-origin: 0;
     padding: 2rem 2.8rem;
-    /* border-radius: 50%; */
   }
 
   .profession:nth-child(1) {
-    /* transform: rotate(-90deg) translate(-120px, -210px); */
     transform: rotate(-90deg) translate(-60px, -238px);
   }
-  /* .profession:nth-child(1) i {
-    margin-right: 0;
-  } */
+
   .profession:nth-child(2) {
     transform: rotate(0deg) translate(0, -290px);
   }
@@ -453,9 +447,7 @@
     border-radius: 0;
     width: 100%;
   }
-  /* .profession i {
-    font-size: 2.8rem;
-  } */
+
   .overlay {
     top: 50rem;
     left: 50%;

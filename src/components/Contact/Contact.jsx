@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FiSend } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
 
@@ -6,11 +6,24 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_z7e46nu",
+      "template_zo132t8",
+      form.current,
+      "13bN_6QS_JxfAOxX2"
+    );
+    e.target.reset();
+  };
   return (
     <div id="contact">
       <h2 className="animated slide-in-left">Contact Me</h2>
       <div className="contact-container">
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <input placeholder="Name" type="text" name="name" required />
           <input placeholder="Enter email" type="email" name="email" required />
           <textarea
