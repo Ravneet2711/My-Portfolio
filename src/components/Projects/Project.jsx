@@ -7,13 +7,12 @@ const Project = () => {
   const [showMore, setShowMore] = useState(false);
   const [numOfProject, setNumOfProjects] = useState(3);
   const handleShow = () => {
-    // setShowMore(!showMore);
-    // setNumOfProjects(numOfProject);
-    for (let i = 0; i < data.length; i++) {
-      setShowMore(showMore);
-      setNumOfProjects(numOfProject + data.length - 1);
+    if (numOfProject === 3) {
+      setShowMore(!showMore);
+      setNumOfProjects(data.length);
+    } else {
+      setNumOfProjects(3);
     }
-    setShowMore(!showMore);
   };
   const slice = data.slice(0, numOfProject);
   const ProjectData = slice.map((project) => {
@@ -40,17 +39,14 @@ const Project = () => {
     <div id="projects">
       <h2 className="animated slide-in-left">Projects</h2>
       <div className="project-container">{ProjectData}</div>
-      {!showMore ? (
-        <button
-          onClick={handleShow}
-          style={{ display: "block", margin: "40px auto" }}
-          className="btn primary"
-        >
-          Show More
-        </button>
-      ) : (
-        ""
-      )}
+
+      <button
+        onClick={handleShow}
+        style={{ display: "block", margin: "40px auto" }}
+        className="btn primary"
+      >
+        {showMore ? "Show Less " : "Show More"}
+      </button>
     </div>
   );
 };
