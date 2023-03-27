@@ -72,7 +72,7 @@ a {
 h2 {
   text-align: center;
   font-size: 5rem;
-  color: var(--color-form);
+  color: var(--color-highlight);
   /* color: #fff; */
   font-family: "Poppins";
   font-weight: 500;
@@ -80,7 +80,7 @@ h2 {
   padding-top: 4rem;
 }
 h2:after {
-  border-top: 4px solid var(--color-form);
+  border-top: 4px solid var(--color-highlight);
   display: block;
   width: 81px;
   content: "";
