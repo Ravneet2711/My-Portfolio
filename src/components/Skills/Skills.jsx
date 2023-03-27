@@ -18,7 +18,7 @@ const Skills = () => {
 
   return (
     <div id="skills">
-      <h2>Skills</h2>
+      <h2 className="animated slide-in-left">Skills</h2>
 
       <div className="Skills-container">
         <div className="skillsection">
@@ -46,8 +46,8 @@ const Skills = () => {
                 </a>
 
                 <ul>
-                  {html.map((items) => (
-                    <li>{items}</li>
+                  {html.map((items, index) => (
+                    <li key={index}>{items}</li>
                   ))}
                 </ul>
               </div>

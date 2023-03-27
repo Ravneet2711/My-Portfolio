@@ -1,8 +1,9 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaSkype } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import footer from "../../assets/footer3.png";
-import ProfileImg from "../../assets/profile.png";
+// import footer from "../../assets/footer3.png";
+// import ProfileImg from "../../assets/profile.png";
+import Professional from "./Professional";
 // import BackgroundImg from "../../assets/home-bg.jpg";
 import "./Home.css";
 const Home = () => {
@@ -12,9 +13,9 @@ const Home = () => {
         <img src={BackgroundImg} />
       </div> */}
       <div className="home-container">
-        <div className="home-image">
+        {/* <div className="home-image">
           <img src={ProfileImg} className="profile-picture" />
-        </div>
+        </div> */}
         <div className="home-info">
           <div className="profile-icon"></div>
           <div className="profile-name">
@@ -29,7 +30,7 @@ const Home = () => {
           </div>
           <div className="profile-options">
             <a href="#contact">Hire Me</a>
-            <a href="#">Download CV</a>
+            <a href="#contact">Download CV</a>
           </div>
         </div>
         {/* <div className="home-image">
@@ -62,11 +63,13 @@ const Home = () => {
           </li>
         </ul>
       </div>
-      <div className="footer-container">
+      {/* <div className="footer-container">
         <div className="footer-parent">
           <img src={footer} alt="none" />
         </div>
-      </div>
+      </div> */}
+
+      <Professional />
     </div>
   );
 };

@@ -1,43 +1,71 @@
-.contact-container {
-  width: var(--container-lg);
-  padding: 1.5rem;
-  box-shadow: 0 0px 20px -2px #1f2235;
-  border-radius: 12px;
-  margin: 0 auto;
+#contact {
+  width: 100%;
+  padding: 0 0 130px 0;
   background: var(--container-gradient);
 }
-
-.contact-title h3 {
+#contact h2 {
   color: #fff;
-  font-family: "Poppins";
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  margin-bottom: 20px;
-  text-align: left;
-  font-size: 5rem;
 }
 
-.form-img h4 {
-  letter-spacing: 0.3rem;
-  font-weight: 400;
-  color: white;
-  font-size: 18px;
-  opacity: 0.5;
+#contact h2::after {
+  border-color: #fff;
 }
-.contact-icons a {
-  padding: 7px;
-  color: #fff;
-  font-size: 1.6rem;
-}
-.form-container {
+.contact-container {
+  box-sizing: border-box;
   margin: 0 auto;
-}
-.form-img img {
-  opacity: 0.5;
+  max-width: 1200px;
+  padding: 0 10px;
   width: 100%;
 }
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(7, 3, 53, 1);
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+textarea {
+  margin-bottom: 5px;
+  min-height: 150px;
+}
+form .btn {
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  align-self: end;
+  font-size: 12pt;
+  margin: 5px 0 0 0;
+  outline: 0;
+  padding: 10px 30px;
+  transition: all 0.5s;
+  background: rgba(7, 3, 53, 1);
+}
+form .btn:hover {
+  background: var(--color-highlight);
+}
+.btn i {
+  vertical-align: sub;
+  padding-left: 5px;
+}
+
 @media (min-width: 940px) {
-  .form-container {
+  /* .form-container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -48,41 +76,28 @@
     flex: 1 1;
     align-self: center;
     margin-right: 2rem;
-  }
+  } */
 }
 @media (max-width: 1024px) {
-  .contact-title h3 {
+  /* .contact-title h3 {
     font-size: 4rem;
   }
   .contact-container {
     width: var(--container-md);
-  }
+  } */
 }
 
 @media (max-width: 600px) {
+  form {
+    max-width: 300px;
+  }
+  form .btn {
+    border: 1px solid #fff;
+    align-self: center;
+    font-size: 10pt;
+    padding: 5px 15px;
+  }
   #contact {
-    padding: 2rem 1.5rem;
-  }
-
-  .contact-title h3 {
-    font-size: 2.5rem;
-  }
-
-  .form-img h4,
-  label {
-    font-size: 1.3rem;
-  }
-
-  .btn {
-    font-size: 1.5rem;
-  }
-
-  .btn svg {
-    height: 1.5rem;
-    width: 1.5rem;
-  }
-
-  .contact-container {
-    width: var(--container-sm);
+    padding: 0 0 57px 0;
   }
 }
