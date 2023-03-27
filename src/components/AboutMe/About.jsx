@@ -17,10 +17,10 @@ const About = () => {
           <div className="about__cards"></div>
           <p>
             Hi, My name is Ravneet Kaur. I am from Delhi, India. I have a
-            Bachelors degree in Information Technology.I have done my Bachelors
-            from GTBIT,GGSIPU.Familiar with (HTML, CSS, JavaSript, Bootstrap,
-            ReactJS and Redux ).Currently looking for a job as a Front-End
-            Developer.
+            Bachelor's degree in Information Technology. I have done my
+            Bachelor's from GTBIT, GGSIPU. Familiar with (HTML, CSS, JavaSript,
+            Bootstrap, ReactJS and Redux ). Currently looking for a job as a
+            Front-End Developer.
           </p>
           <a href="#CV" download className="btn primary about_btn">
             Download CV
