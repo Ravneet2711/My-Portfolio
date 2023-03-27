@@ -7,11 +7,13 @@ const Project = () => {
   const [showMore, setShowMore] = useState(false);
   const [numOfProject, setNumOfProjects] = useState(3);
   const handleShow = () => {
-    if (numOfProject === 3) {
-      setShowMore(!showMore);
+    setShowMore(showMore);
+    if (numOfProject === 3 && showMore === false) {
       setNumOfProjects(data.length);
+      setShowMore(!showMore);
     } else {
       setNumOfProjects(3);
+      setShowMore(!showMore);
     }
   };
   const slice = data.slice(0, numOfProject);
@@ -45,7 +47,7 @@ const Project = () => {
         style={{ display: "block", margin: "40px auto" }}
         className="btn primary"
       >
-        {showMore ? "Show Less " : "Show More"}
+        {!showMore ? "Show More " : "Show Less"}
       </button>
     </div>
   );
