@@ -230,13 +230,10 @@
   right: 0;
   width: 768px;
   height: 768px;
-  border-top: 384px solid;
-  border-top-color: var(--color-form);
-  border-bottom: 384px solid;
-  border-bottom-color: var(--color-form);
+  border-top: 384px solid var(--color-form);
+  border-bottom: 384px solid var(--color-form);
   border-left: 384px solid transparent;
-  border-right: 384px solid;
-  border-right-color: var(--color-form);
+  border-right: 384px solid var(--color-form);
 }
 
 /******Mobile View Profession******/
