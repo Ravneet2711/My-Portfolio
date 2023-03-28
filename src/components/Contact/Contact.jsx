@@ -15,7 +15,7 @@ const Contact = () => {
       "service_0fbkc8p",
       "template_zo132t8",
       form.current,
-      "13bN_6QS_JxfAOxX2"
+      "7vQbwmEAwfl8zuAch"
     );
     e.target.reset();
   };
