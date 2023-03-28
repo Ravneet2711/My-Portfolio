@@ -55,6 +55,7 @@ form .btn {
   padding: 10px 30px;
   transition: all 0.5s;
   background: rgba(7, 3, 53, 1);
+  cursor: pointer;
 }
 form .btn:hover {
   background: var(--color-highlight);
