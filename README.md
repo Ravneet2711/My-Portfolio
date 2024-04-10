@@ -6,7 +6,7 @@ _SO IF YOU LIKED MY WORK, YOU CAN HIRE ME. 😉_
 
 ## Project URL
 
-[THIS IS ME](https://ravs-portfolio.netlify.app/)
+[THIS IS ME](https://ravneet-portfolio.vercel.app/)
 
 ## Getting Started with Create React App
 
